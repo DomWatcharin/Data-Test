@@ -1,22 +1,10 @@
-import streamlit as st
+import subprocess
 
-# Install dependencies for the first run
-def onboarding():
-    st.title("Installing dependencies...")
-    st.info("This may take a moment.")
-    
-    # Install required libraries
-    st.code("!pip install -r requirements.txt", language="bash")
-
-    st.success("Dependencies installed. Please restart the app.")
-    st.balloons()
-
-if st.onboarding_started():
-    onboarding()
-    st.stop()
+# Install required libraries
+subprocess.run(["pip", "install", "-r", "requirements.txt"])
 
 # Import libraries
-
+import streamlit as st
 import pandas as pd
 import plotly.express as px
 import calendar
