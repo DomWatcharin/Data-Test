@@ -1,3 +1,5 @@
+import streamlit as st
+
 # Install dependencies for the first run
 def onboarding():
     st.title("Installing dependencies...")
@@ -12,9 +14,9 @@ def onboarding():
 if st.onboarding_started():
     onboarding()
     st.stop()
-    
+
 # Import libraries
-import streamlit as st
+
 import pandas as pd
 import plotly.express as px
 import calendar
