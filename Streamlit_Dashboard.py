@@ -1,3 +1,18 @@
+# Install dependencies for the first run
+def onboarding():
+    st.title("Installing dependencies...")
+    st.info("This may take a moment.")
+    
+    # Install required libraries
+    st.code("!pip install -r requirements.txt", language="bash")
+
+    st.success("Dependencies installed. Please restart the app.")
+    st.balloons()
+
+if st.onboarding_started():
+    onboarding()
+    st.stop()
+    
 # Import libraries
 import streamlit as st
 import pandas as pd
