@@ -64,6 +64,5 @@ The dashboard processes the provided CSV data (`test_data.csv`) by extracting da
 
 - The dashboard offers a user-friendly interface for exploring restaurant management metrics.
 
-Feel free to customize and enhance the dashboard to suit your specific restaurant management needs.
-
-**Note:** Ensure that the required CSV file (`test_data.csv`) is available in the same directory as the script.
+Check out the [Restaurant Management Dashboard](https://dashboard-test.streamlit.app/)!{:target="_blank"}
+[link](https://dashboard-test.streamlit.app/?embed_options=light_theme,show_colored_line)
